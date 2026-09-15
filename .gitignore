@@ -1,0 +1,17 @@
+# Variables de entorno y secretos
+.env
+.env.local
+*.pem
+
+# Dependencias y paquetes
+node_modules/
+dist/
+build/
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de editores o IDEs
+.vscode/
+.idea/

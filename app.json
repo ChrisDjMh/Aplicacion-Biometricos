@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Biometric Vault",
+    "slug": "biometric-vault-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tuempresa.biometricvault",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Usamos Face ID para proteger el acceso a tu bóveda de archivos.",
+        "NSPhotoLibraryUsageDescription": "Necesitamos acceso a tu galería para guardar fotos y videos en la bóveda.",
+        "NSPhotoLibraryAddUsageDescription": "Necesitamos guardar archivos en tu galería."
+      }
+    },
+    "android": {
+      "package": "com.tuempresa.biometricvault",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F172A"
+      },
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Usamos Face ID para proteger el acceso a tu bóveda de archivos."
+        }
+      ]
+    ]
+  }
+}
